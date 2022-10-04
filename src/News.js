@@ -47,24 +47,18 @@ const News = (props) => {
     setTotalResults(parsedData.totalResults);
   };
 
-  return (
-    <>
-      <h1
-        className="text-center"
-        style={{ margin: "35px 0px", marginTop: "90px" }}
-      >
-        JsNews - Top {capitalizeFirstLetter(props.category)} Headlines
-      </h1>
-      {loading && <Spinner />}
-      <InfiniteScroll
-        dataLength={articles?articles.length:0}
+        return (
+            <>
+                <h1 className="text-center" style={{ margin: '35px 0px', marginTop: '90px' }}>NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
+                {loading && <Spinner />}
+                <InfiniteScroll
+                  dataLength={articles?articles.length:0}
         next={fetchMoreData}
         hasMore={articles?articles.length !== totalResults:false}
-        loader={<Spinner />}
-      >
-        <div className="container">
-          <div className="row">
-             <div className="container">
+             
+                    loader={<Spinner/>}
+                > 
+                    <div className="container">
                          
                     <div className="row">
                         {articles.map((element) => {
@@ -75,34 +69,12 @@ const News = (props) => {
                     </div>
                     </div> 
                 </InfiniteScroll>
-            
-//             {articles?articles.map((element) => {
-//               return (
-//                 <div className="col-md-4" key={element.url}>
-//                   <NewsItem
-//                     title={element.title ? element.title : ""}
-//                     description={element.description ? element.description : ""}
-//                     imageUrl={element.urlToImage}
-//                     newsUrl={element.url}
-//                     author={element.author}
-//                     date={element.publishedAt}
-//                     source={element.source.name}
-//                   />
-//                 </div>
-//               );
-//             }):return (<div>No results </div>)}
-            
-//             {articles.map((element) => {
-//                             return <div className="col-md-4" key={element.url}>
-//                                 <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
-//                             </div>
-//                         })}
-//           </div>
-//         </div>
-//       </InfiniteScroll>
-    </>
-  );
-};
+            </>
+        )
+    
+} dataLength={articles?articles.length:0}
+        next={fetchMoreData}
+        hasMore={articles?articles.length !== totalResults:false}
 
 News.defaultProps = {
   country: "in",
