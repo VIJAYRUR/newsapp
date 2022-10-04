@@ -79,7 +79,7 @@ const News = (props) => {
                   />
                 </div>
               );
-            })?return (<div>No results </div>)}
+            }):return (<div>No results </div>)}
           </div>
         </div>
       </InfiniteScroll>
