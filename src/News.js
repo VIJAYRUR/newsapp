@@ -65,7 +65,7 @@ const News = (props) => {
         <div className="container">
           <div className="row">
             
-            {articles?.map((element) => {
+            {articles?articles.map((element) => {
               return (
                 <div className="col-md-4" key={element.url}>
                   <NewsItem
@@ -79,7 +79,7 @@ const News = (props) => {
                   />
                 </div>
               );
-            })}
+            })?return (<div>No results </div>)}
           </div>
         </div>
       </InfiniteScroll>
