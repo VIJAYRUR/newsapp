@@ -72,9 +72,7 @@ const News = (props) => {
             </>
         )
     
-} dataLength={articles?articles.length:0}
-        next={fetchMoreData}
-        hasMore={articles?articles.length !== totalResults:false}
+}
 
 News.defaultProps = {
   country: "in",
