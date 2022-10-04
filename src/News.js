@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 
 import NewsItem from './NewsItem'
-import Spinner from './Spinner';
+import Spinner from './spinner';
 import PropTypes from 'prop-types'
 import InfiniteScroll from "react-infinite-scroll-component";
 
@@ -30,7 +30,7 @@ const News = (props)=>{
     }
 
     useEffect(() => {
-        document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
+        document.title = `${capitalizeFirstLetter(props.category)} - News`;
         updateNews(); 
         // eslint-disable-next-line
     }, [])
