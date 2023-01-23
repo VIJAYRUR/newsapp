@@ -1,1 +1,5 @@
-![image-description](https://images.unsplash.com/photo-1674230226985-f7d78563c90d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+Web App:
+![Screenshot_27](https://user-images.githubusercontent.com/78963023/213971285-c461dc06-6c7a-434e-9f2a-f2858dc115a3.png)
+
+Website responsiveness illustration:
+![Screenshot_29](https://user-images.githubusercontent.com/78963023/213971267-b1ae943a-c30d-4017-b8b7-49b6e5c0674e.png)
