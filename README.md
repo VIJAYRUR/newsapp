@@ -1,1 +1,1 @@
-![image-description](https://github.com/VIJAYRUR/newsapp/blob/master/Screenshot_28.png)
+![image-description](https://drive.google.com/file/d/17YLm60RujajXPuve860WOvykpbpMVvB4/view?usp=share_link)
